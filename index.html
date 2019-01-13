@@ -1,0 +1,63 @@
+<!-- Name: Kevin Key
+	 Date Created: 1/7/19
+	 Last Edit: 1/12/19 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Sevens's Futility</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		body {
+			background-color: #dee2e8;
+		}
+		td {
+			padding-right: 10px;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 20px;
+		}
+
+		.needMargin {
+			margin: 8px 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xs-12">
+				<h1>Lucky Sevens</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-xs-12 needMargin">
+				<label>Starting Bet: <span>$ </span>
+				<input id="startingBet" type="text" placeholder="0.00 ">
+				</label>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-xs-12">
+				<!-- Calling the function playGame in luckySevensScript.js -->
+				<button class="btn btn-primary mb-2" id='btn' onclick="playGame(this);">Play</button> 
+			</div>
+		</div>
+		<br />
+		<div class="row justify-content-center">
+			<!-- Created a span to insert myTable created with JavaScript -->
+			<span id='myTable'></span>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="luckySevensScript.js"></script>
+</body>
+</html>
