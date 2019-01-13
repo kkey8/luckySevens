@@ -80,7 +80,7 @@ var array = [];
 				table += "<td>"+ myData[i] +"</td></tr>";
 			}
 
-			table += "</tbody><table>";
+			table += "</tbody></table>";
 
 			// Changed the button from Play to Play Again.
 			document.getElementById("btn").innerHTML = "Play Again";
